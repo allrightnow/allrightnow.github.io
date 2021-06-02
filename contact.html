@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <!--[if IE]>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <![endif]-->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- Page title -->
+   
+
+   <title>Tone up</title>
+   <!--[if lt IE 9]>
+   <script src="js/respond.js"></script>
+   <![endif]-->
+   <!-- Bootstrap Core CSS -->
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <!-- Icon fonts -->
+   <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+   <link href="fonts/glyphicons/bootstrap-glyphicons.css" rel="stylesheet" type="text/css">
+   <!-- Google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,800" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+   <!-- Style CSS -->
+   <link href="css/style.css" rel="stylesheet">
+   <!-- Plugins CSS -->
+   <link rel="stylesheet" href="css/plugins.css">
+   <!-- Color Style CSS -->
+   <link href="styles/maincolors.css" rel="stylesheet">
+   <!-- Favicons-->
+
+
+</head>
+<body id="page-top">
+<!-- Preloader -->
+
+<!-- Preloader ends -->
+<nav class="navbar navbar-custom navbar-fixed-top">
+   <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+            <i class="fa fa-bars"></i>
+         </button>
+
+      </div>
+      <!--/navbar-header -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-brand-centered">
+         <ul class="nav navbar-nav" >
+            <li><a href="index.html">Main</a></li>
+            <li><a href="blog.html">Articles</a></li>
+         </ul>
+         <ul class="nav navbar-nav navbar-right" >
+            <li><a href="terms.html">Terms and conditions</a></li>
+            <li class="active"><a href="contact.html">Contacts</a></li>
+            <li><a href="policy.html">Privacy policy</a></li>
+         </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+   </div>
+   <!-- /.container -->
+</nav>
+      <!-- /navbar ends -->
+      <!-- Section Contact -->
+      <section id="contact" class="pages no-padding">
+         <div class="jumbotron" data-stellar-background-ratio="0.5">
+            <!-- Heading -->
+            <div class="jumbo-heading" data-stellar-background-ratio="1.2">
+               <h1>Contacts</h1>
+            </div>
+         </div>
+         <!-- container -->
+         <div class="container">
+            <div class="row">
+               <!-- Contact Info -->
+               <div class="col-lg-5 col-md-5">
+
+                     <ul class="list-inline">
+                        <li><i class="fa fa-envelope"></i><a href="mailto:youremailaddress">ythiel@ratke.com</a></li>
+                        <li><i class="fa fa-phone margin-icon"></i>+6088030174860</li>
+                        <li><i class="fa fa-map-marker margin-icon"></i>20974 Terry Knolls Suite 407
+Cleoraborough, MI 87194</li>
+                     </ul>
+                     <!-- address info -->
+
+               </div>
+               <!-- /col-lg-5-->
+               <!-- Contact Form -->
+               <div class="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 res-margin">
+                  <form action="thanks.html" method="post">
+                     <div id="contact_form">
+                        <div class="form-group">
+                           <label>Name<span class="required">*</span></label>
+                           <input type="text" name="name" class="form-control input-field" required="">
+                           <label>Email<span class="required">*</span></label>
+                           <input type="email" name="email" class="form-control input-field" required="">
+                           <label for="phone">Phone number</label>
+                           <input type="text" id="phone" class="form-control ">
+                           <label><span class="required">*</span></label>
+                           <textarea name="message" id="message" class="textarea-field form-control" rows="3"  required=""></textarea>
+                        </div>
+                        <input type="checkbox" name="terms" value="check" required=""/>
+                        <a href="policy.html" target="_blank">
+                           I have read and agree to the terms of the user agreement
+                        </a>
+                        <button type="submit" id="submit_btn" value="Submit" class="btn center-block">Send</button>
+                     </div>
+                  </form>
+                  <!-- Form Starts -->
+
+                  <!-- Contact results -->
+                  <div id="contact_results"></div>
+               </div>
+               <!--/col-lg-6 -->             
+            </div>
+            <!-- /row-->
+         </div>
+         <!-- /container-->
+         <div class="container-fluid margin1">
+            <!-- map-->
+
+         </div>
+         <!-- /container-fluid-->
+      </section>
+      <!-- /Section ends -->
+      <!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+
+   <div class="container">
+
+      <div class="row">
+         <div class="col-12 text-md-center text-left">
+            <p>
+
+               Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+               All rights reserved
+
+            </p>
+         </div>
+      </div>
+   </div>
+</footer>
+<div class='cookie-banner'>
+   <p>
+      The site uses cookies. They allow us to recognize you and get information about your user experience.By continuing to browse the site, I agree to the use of cookies by the site owner in accordance with  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+   </p>
+   <button class='close-cookie'>&times;</button>
+</div>
+<!-- /footer ends -->
+<!-- Core JavaScript Files -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Main Js -->
+
+<script>
+   window.onload = function () {
+      $('.close-cookie').click(function () {
+         $('.cookie-banner').fadeOut();
+      })
+   }
+</script>
+<script>
+   let elems = document.querySelectorAll('.server-name');
+   elems.forEach((elem) => {
+      elem.innerHTML = window.location.hostname
+   })
+</script>
+</body>
+</html>
